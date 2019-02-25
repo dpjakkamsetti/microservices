@@ -10,8 +10,9 @@ public class QuoteDetails {
 	private double yearLow;
 	private double yearHigh;
 	private List<String> news;
+	private String port;
 	
-	public QuoteDetails(String id, String name, double price, double yearLow, double yearHigh, List<String> news) {
+	public QuoteDetails(String id, String name, double price, double yearLow, double yearHigh, List<String> news, String port) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -19,6 +20,15 @@ public class QuoteDetails {
 		this.yearLow = yearLow;
 		this.yearHigh = yearHigh;
 		this.news = news;
+		this.port = port;
+	}
+	
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
 	}
 	
 	public String getId() {

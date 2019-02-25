@@ -25,6 +25,6 @@ public class QuotesService {
 	
 	public QuoteDetails getQuoteDetails(String id) {
 		
-		return new QuoteDetails("100", "BMO", 100, 70, 150, Arrays.asList("News1","News2","News3","News4","News5"));
+		return new QuoteDetails("100", "BMO", 100, 70, 150, null, null);
 	}
 }
