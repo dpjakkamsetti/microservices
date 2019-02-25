@@ -1,0 +1,71 @@
+package com.bmo.microservices.newsservice;
+
+import java.util.List;
+
+public class QuoteDetails {
+	
+	private String id;
+	private String name;
+	private double price;
+	private double yearLow;
+	private double yearHigh;
+	private List<String> news;
+	private String port;
+	
+	public QuoteDetails(String id, String name, double price, double yearLow, double yearHigh, List<String> news, String port) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.yearLow = yearLow;
+		this.yearHigh = yearHigh;
+		this.news = news;
+		this.port = port;
+	}
+	
+	public String getPort() {
+		return port;
+	}
+
+	public void setPort(String port) {
+		this.port = port;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public double getYearLow() {
+		return yearLow;
+	}
+	public void setYearLow(double yearLow) {
+		this.yearLow = yearLow;
+	}
+	public double getYearHigh() {
+		return yearHigh;
+	}
+	public void setYearHigh(double yearHigh) {
+		this.yearHigh = yearHigh;
+	}
+	public List<String> getNews() {
+		return news;
+	}
+	public void setNews(List<String> news) {
+		this.news = news;
+	}
+	
+}
